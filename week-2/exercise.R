@@ -9,7 +9,7 @@ my_vector <- c(my_num, initials)
 vector_sum <- sum(my_vector)
 
 # Describe why this doesn't work: 
-# 
+# The sum() function only calculates the sum of all the imputs.
 
 install.packages("stringr")
 
@@ -18,21 +18,29 @@ my_line <- "Hey, hey, this is the library"
 print(str_length(my_line))
 
 # Describe why this doesn't work: 
-# 
+# str_length is not a function 
 
 said_the_famous <- paste(my_line, " - ", initial)
 
 # Describe why this doesn't work: 
-# 
+# The vairble initial is not stored in the environment 
 
 
 ## Part 2 - Vector and function practice
 
 # Make a vector and use typeof to check what type R considers it to be
 
+people <- c("Amelia", "Naureen", "Ryan")
+typeof(people)
+# typeof stands for type of object. It determines the type of storage mode of an object
+# people is a type of character 
+
 # Write a function `compare_length` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
 
+start_of_sentence <- c("the different of")
+end_sentence <- c("length is N")
+compare_lenght <- c(start_of_sentence, end_sentence)
 
 # Pass two vectors of different length to your `compare_length` function
 
